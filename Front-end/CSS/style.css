@@ -1,0 +1,30 @@
+header {
+    text-align: center; 
+    padding: 20px; 
+  }
+
+  #cruise-logo {
+    width: 200px; 
+    height: auto;
+    display: inline-block; 
+    vertical-align: middle;
+  }
+
+  #sweeps-logo {
+    width: 200px; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle;
+    margin: 0 10px; 
+  }
+
+  #d-100 {
+    width: 100px;
+    height: auto;
+    display: inline-block; 
+    vertical-align: middle; 
+  }
+
+.mySlides {
+    display: none;
+}
