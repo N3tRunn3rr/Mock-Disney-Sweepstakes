@@ -116,8 +116,8 @@ a { color:black } /* Globally */
 /* Each state */
 
 a:visited { text-decoration: none; color:black; }
-/* a:hover { text-decoration: none; color:blue; }
-a:focus { text-decoration: none; color:yellow; }
+a:hover { text-decoration: none; color:blue; }
+/* a:focus { text-decoration: none; color:yellow; }
 a:hover, a:active { text-decoration: none; color:black } */
 
 .terms-of-use ul {
