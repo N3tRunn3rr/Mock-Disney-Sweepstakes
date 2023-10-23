@@ -40,3 +40,33 @@ header {
   margin: 0 auto;
   padding-bottom: 5%;
 }
+
+.submit-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.submit-button {
+  padding-top: 10px;
+  text-align: right;
+  padding-right: 39px;
+}
+.form-heading {
+text-align: center;
+}
+
+.image-container {
+padding-top: 25px;
+padding-left: 15px;
+text-align: center;
+}
+
+.image-container img {
+  width: 25%;
+  height: auto;
+  margin-right: 25px;
+}
