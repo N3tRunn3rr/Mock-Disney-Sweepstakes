@@ -3,6 +3,47 @@ header {
     padding: 20px; 
   }
 
+body {
+  background-image: linear-gradient(to right top, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #acbced, #acbced, #acbced, #c5cbf1, #dadcf5, #eeedfa, #ffffff);
+}
+
+.home {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.left-container {
+  flex: 1;
+  padding: 20px; /* Add some padding for spacing */
+  /* overflow-y: auto; Enable vertical scrolling */
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px; /* Add some padding for spacing */
+  display: flex; /* Use flex display to align images horizontally */
+  justify-content: center; /* Center align the images horizontally */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain image aspect ratio */
+  margin: 10px; /* Add some margin between images */
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height: auto;
+}
+
   #cruise-logo {
     width: 200px; 
     height: auto;
