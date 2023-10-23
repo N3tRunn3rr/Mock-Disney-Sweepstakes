@@ -15,7 +15,6 @@ body {
 .left-container {
   flex: 1;
   padding: 20px; /* Add some padding for spacing */
-  /* overflow-y: auto; Enable vertical scrolling */
 }
 
 .image-container {
@@ -120,3 +119,32 @@ a:visited { text-decoration: none; color:black; }
 /* a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; }
 a:hover, a:active { text-decoration: none; color:black } */
+
+.terms-of-use ul {
+  list-style: none;
+}
+
+.terms-of-use a li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  background-image: url('../Images/bulletmickey.svg'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.first-divider {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-top: 1px solid #5a627a;
+  border-bottom: 1px solid #5a627a;
+}
+
+.second-divider {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-top: 1px solid #5a627a;
+  border-bottom: 1px solid #5a627a;
+}
