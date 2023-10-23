@@ -27,4 +27,16 @@ header {
 
 .mySlides {
     display: none;
+    animation: fade 4s linear infinite;
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+.slideshow-container {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 5%;
 }
