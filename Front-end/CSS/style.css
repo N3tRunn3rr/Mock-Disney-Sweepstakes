@@ -228,6 +228,27 @@ li:nth-child(5) {
   border-bottom: 1px solid #5a627a;
 }
 
+.disney-footer {
+  margin: 20px auto 0;
+  justify-self: center;
+
+  @media (min-width: 768px) {
+    width: 120px;
+  }
+}
+
+label {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  color: #440099;
+  display: block;
+  text-align: center;
+  margin: 26px auto;
+}
+
+
+
 
 .traduct-container {
   display:inline-block;
