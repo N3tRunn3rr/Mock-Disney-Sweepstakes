@@ -9,7 +9,7 @@ body {
 
 .home {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: inherit;
 }
 
 .left-container {
@@ -20,14 +20,22 @@ body {
 .image-container {
   flex: 1;
   padding: 20px; /* Add some padding for spacing */
-  display: flex; /* Use flex display to align images horizontally */
+  display: none;
   justify-content: center; /* Center align the images horizontally */
+  position: relative;
+  z-index: 1;
+  height: 100vh;
 }
 
 .image-container img {
-  max-width: 100%; /* Ensure images don't exceed container width */
-  height: auto; /* Maintain image aspect ratio */
+  width: 100%;
+  height: 100%; /* Maintain image aspect ratio */
+  max-height: 100vh;
   margin: 10px; /* Add some margin between images */
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
 }
 
 .right-container {
@@ -147,4 +155,62 @@ a:hover, a:active { text-decoration: none; color:black } */
   margin-bottom: 35px;
   border-top: 1px solid #5a627a;
   border-bottom: 1px solid #5a627a;
+}
+
+/* adding import code for style css below here */
+@import './_reset';
+@import './variables';
+@import './mixins';
+@import './fonts';
+@import './_form_inputs';
+@import './buttons';
+@import './general';
+@import './home';
+@import './_details_component';
+@import './_user_handler';
+@import './_logged_in_user_component';
+@import './_logged_out_user_component';
+@import './_thank_you';
+@import './footer';
+@import './gallery';
+@import './mobilegallery';
+@import './sweepstake_rules';
+@import './animations';
+@import './oneid_form_content';
+@import './header';
+
+.traduct-container {
+  display:inline-block;
+  z-index:2147483647
+}
+.country-selector {
+  display:inline-block;font-size:13px;position:relative;text-align:left;width:auto
+}
+.country-selector .wg-li {
+  font-size:13px
+}
+.wg-drop.country-selector {
+  background-color:#fff
+}
+.wg-drop.wg-mouse-click > div {
+  outline:0
+}
+.country-selector ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  z-index:2147483647
+}
+.country-selector li {
+  margin:0;padding:0
+}
+.country-selector a {
+  color:#000;
+  display:flex;
+  float:none!important;
+  outline:none;
+  text-decoration:none
+}
+.country-selector a:focus {
+  outline:none
 }
