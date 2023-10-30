@@ -1,0 +1,283 @@
+.laliga-footer {
+    margin-bottom: 24px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        z-index: 0;
+        width: 87%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+          width: 90%;
+        }
+        @media (min-width: 1024px) {
+          width: 85%;
+        }
+        @media (min-width: 1200px) {
+          width: 80%;
+        }
+        @media (min-width: 1366px) {
+          width: 84%;
+        }
+        @media (min-width: 1500px) {
+          width: 690px;
+        }
+
+        a {
+            &:hover {
+                color: $main-font-color;
+            }
+        }
+
+        b {
+            font-family: AvenirNextBold;
+        }
+    }
+
+    .disney-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+
+      @media (min-width: 767px) {
+        grid-template-columns: auto auto;
+        margin-top: 100px;
+      }
+
+      @media (min-width: 1024px) {
+        padding: 0 20px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border: none;
+        border-radius: 0;
+        background: none;
+
+        img {
+          max-width: 320px;
+
+          @media (min-width: 1024px) {
+            max-width: 220px;
+          }
+          @media (min-width: 1200px) {
+            max-width: 260px;
+          }
+          @media (min-width: 1366px) {
+            max-width: 320px;
+          }
+
+        }
+
+        .card-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 42px;
+          background-color: rgba(#FFFFFF, 0.6);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .card-text-img {
+          align-self: center;
+          height: 28px;
+          margin-left: 0.75rem;
+        }
+
+        a {
+          align-self: center;
+          text-decoration: none;
+          justify-self: center;
+          font-family: 'AvenirBlack';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 13px;
+          line-height: 120%;
+          display: flex;
+          align-items: center;
+          text-align: right;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #440099;
+        }
+
+        .card-text2 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 42px;
+          background-color: rgba(#FFFFFF, 0.7);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          .card-text-img2 {
+            align-self: center;
+            height: 38px;
+            margin-left: 0.5rem;
+          }
+
+          a {
+            @media (min-width: 1024px) {
+              margin-right: 8px;
+            }
+            @media (min-width: 1200px) {
+              margin-right: 0;
+              justify-self: center;
+            }
+          }
+
+        }
+
+
+      }
+
+    }
+
+    .footer-links {
+        display: grid;
+        margin: 40px auto 70px;
+        font-style: normal;
+
+        @media (min-width: 768px) {
+          margin: 90px auto 80px;
+        }
+
+        @media (min-width: 1024px) {
+          margin: 70px auto 80px;
+          width: 500px;
+        }
+
+        @media (min-width: 1366px) {
+          width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            grid-auto-flow: row;
+            align-items: center;
+
+            @include respond-to('small'){
+              flex-flow: row wrap;
+              align-items: center;
+            }
+
+            li {
+              font-family: Avenir;
+              font-size: 16px;
+              line-height: 31px;
+              position: relative;
+              text-align: center;
+              justify-content: space-evenly;
+              display: flex;
+              color: #000000;
+              align-items: center;
+              margin: 3px 0;
+
+              a {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-weight: 400;
+                color: #440099;
+                &:hover {
+                    color: darken(#440099, 10);
+                    text-decoration: underline;
+                }
+              }
+            }
+
+            li:nth-child(5) {
+              margin: 6px 0;
+
+              .footer-links__divider {
+                align-self: start;
+                margin-top: 5px;
+              }
+
+              a {
+                width: 190px;
+                line-height: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none !important;
+                color: #440099 !important;
+
+                &:hover {
+                  color: darken(#440099, 10);
+                    text-decoration: underline;
+                }
+              }
+
+              @media (min-width: 768px) {
+
+                a {
+                  width: 100%;
+                }
+
+                .footer-links__divider {
+                  align-self: center !important;
+                  margin-top: unset;
+                }
+              }
+
+            }
+        }
+
+        label {
+          font-family: Avenir;
+          font-size: 16px;
+          font-weight: 400;
+          color: #440099;
+          display: block;
+          text-align: center;
+          margin: 26px auto;
+        }
+
+        &__divider {
+          background: url('/img/bulletmickey.svg');
+          background-repeat: no-repeat;
+          width: 16px;
+          height: 11px;
+          margin: 0 8px;
+        }
+
+      }
+
+    .disney-footer {
+      margin: 20px auto 0;
+      justify-self: center;
+
+      @media (min-width: 768px) {
+        width: 120px;
+      }
+    }
+
+}

@@ -154,18 +154,7 @@ a:hover, a:active { text-decoration: none; color:black } */
 @import './buttons';
 @import './general';
 @import './home';
-@import './_details_component';
-@import './_user_handler';
-@import './_logged_in_user_component';
-@import './_logged_out_user_component';
-@import './_thank_you';
 @import './footer';
-@import './gallery';
-@import './mobilegallery';
-@import './sweepstake_rules';
-@import './animations';
-@import './oneid_form_content';
-@import './header';
 
 .traduct-container {
   display:inline-block;
