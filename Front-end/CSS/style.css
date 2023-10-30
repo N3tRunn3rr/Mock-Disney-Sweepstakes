@@ -1,3 +1,14 @@
+/* adding import code for style css below here */
+@import './_reset';
+@import './variables';
+@import './mixins';
+@import './fonts';
+@import './_form_inputs';
+@import './buttons';
+@import './general';
+@import './home';
+@import './footer';
+
 .header {
   text-align: left; 
   padding-left: 180px; 
@@ -141,16 +152,6 @@ a:hover, a:active { text-decoration: none; color:black } */
   border-bottom: 1px solid #5a627a;
 }
 
-/* adding import code for style css below here */
-@import './_reset';
-@import './variables';
-@import './mixins';
-@import './fonts';
-@import './_form_inputs';
-@import './buttons';
-@import './general';
-@import './home';
-@import './footer';
 
 .traduct-container {
   display:inline-block;
