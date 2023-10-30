@@ -9,38 +9,36 @@ body {
 
 .home {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: inherit;
 }
 
 .left-container {
   flex: 1;
-  padding: 20px; /* Add some padding for spacing */
+  padding: 20px; 
 }
 
 .image-container {
   flex: 1;
-  padding: 20px; /* Add some padding for spacing */
-  display: flex; /* Use flex display to align images horizontally */
-  justify-content: center; /* Center align the images horizontally */
+  padding: 20px; 
+  display: flex; 
+  justify-content: center; 
 }
 
 .image-container img {
-  max-width: 100%; /* Ensure images don't exceed container width */
-  height: auto; /* Maintain image aspect ratio */
-  margin: 10px; /* Add some margin between images */
+  max-width: 100%; 
+  height: auto; 
+  margin: 10px; 
 }
 
 .right-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.slideshow-container {
+  align-items: right;
+  justify-content: right;
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
   #cruise-logo {
@@ -75,11 +73,6 @@ body {
   25%, 75% { opacity: 1; }
 }
 
-.slideshow-container {
-  width: 40%;
-  margin: 0 auto;
-  padding-bottom: 5%;
-}
 
 .submit-container {
   width: 300px;
