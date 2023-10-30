@@ -7,7 +7,7 @@
 @import './buttons';
 @import './general';
 @import './home';
-@import './footer';
+@import './footer.scss';
 
 .header {
   text-align: left; 
@@ -114,19 +114,14 @@ justify-content: center;
   margin-right: 25px; 
 }
 
-a { color:black } /* Globally */
+/* a { color:black } Globally */
 
 /* Each state */
 
-a:visited { text-decoration: none; color:black; }
-a:hover { text-decoration: none; color:blue; }
+/* a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; } */
 /* a:focus { text-decoration: none; color:yellow; }
 a:hover, a:active { text-decoration: none; color:black } */
-
-.terms-of-use ul {
-  list-style: none;
-}
-
 .terms-of-use a li::before {
   content: "";
   display: inline-block;
@@ -137,6 +132,87 @@ a:hover, a:active { text-decoration: none; color:black } */
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.terms-of-use {
+  display: grid;
+  margin: 40px auto 70px;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+li {
+  font-family: Avenir;
+  font-size: 16px;
+  line-height: 31px;
+  position: relative;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  color: #000000;
+  align-items: center;
+  margin: 3px 0;
+}
+
+a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: #440099;
+      &:hover {
+        color: darken(#440099, 10);
+        text-decoration: underline;
+        }
+}
+
+li:nth-child(5) {
+  margin: 6px 0;
+
+  .footer-links__divider {
+    align-self: start;
+    margin-top: 5px;
+  }
+
+  a {
+    width: 190px;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #440099 !important;
+
+    &:hover {
+      color: darken(#440099, 10);
+        text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    a {
+      width: 100%;
+    }
+
+    .footer-links__divider {
+      align-self: center !important;
+      margin-top: unset;
+    }
+  }
+}
+
 
 .first-divider {
   margin-top: 35px;
